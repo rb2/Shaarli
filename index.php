@@ -42,9 +42,10 @@ if ($GLOBALS['config']['PHP_MARKDOWN'] === true)
 		if ($GLOBALS['config']['PHP_MARKDOWN_EXTRA'] === true)
 			require_once('plugins/php-markdown/Michelf/MarkdownExtra.php');
 	} else {
-		require_once('plugins/php-markdown-5.2/markdown.php');
 		if ($GLOBALS['config']['PHP_MARKDOWN_EXTRA'] === true)
 			require_once('plugins/php-markdown-5.2/MarkdownExtra.php');
+		else
+			require_once('plugins/php-markdown-5.2/markdown.php');
 	}
 }
 // -----------------------------------------------------------------------------------------------
